@@ -1,0 +1,35 @@
+.wrap{
+  padding: 0 10% 0 10%;
+}
+.box{
+  background-color: #eee;
+  margin-bottom:2em;
+  padding:5%;
+  text-align: center;
+  font-size: 18px
+}
+
+.position-relative{
+  height:200px;
+}
+
+.position-fixed {
+  position: fixed;
+  top:0px;
+  left:0px;
+}
+
+.position-absolute{
+  position:absolute;
+  right:100px;
+  background-color: #999;
+}
+
+.cover{
+  position:absolute;
+  width:100%;
+  top:900px;
+  right:0px;
+  background-color:#4aaaa5;
+
+}
