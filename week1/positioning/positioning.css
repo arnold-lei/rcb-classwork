@@ -26,9 +26,9 @@
 }
 
 .cover{
-  position:absolute;
+  position: absolute;
   width:100%;
-  top:900px;
+  bottom:-900px;
   right:0px;
   background-color:#4aaaa5;
 
