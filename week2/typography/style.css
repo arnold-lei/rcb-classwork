@@ -26,6 +26,7 @@ If you still finish early, spend some time trying to actually make the page look
 
 body{
   font-family: 'Montserrat', sans-serif;
+  /*font-family: BlinkMacSystemFont, 'Arial', 'Helvetica Neue', Helvetica, sans-serif;*/
   text-align: justify;
   color:#777777;
   background-color:#e6f7ff;
@@ -33,18 +34,86 @@ body{
 
 h1, h3, h4{
   color:red;
+  font-family: 'Itim', cursive;
 }
 
 h1{
   font-size: 36;
+  font-family: 'Montserrat', sans-serif;
 }
 
+a{
+
+}
 
 p{
   line-height: 24px;
+  font-family: 'Caveat Brush', cursive;
 }
 .wrap{
   padding:0 5%;
   margin-bottom: 5%;
 }
+
+
+  /*navigation bar*/
+  a {
+    text-align: none;
+    color:inherit;
+  }
+
+  .nav-collapse{
+
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fff;
+      padding:0 5%;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin:0px;
+      padding-top:2em;
+      padding-bottom: 2em;
+      padding-right: 2em;
+      padding-left: 2em;
+      border:0px;
+      border-right: 1px solid #f5f5f5;
+  }
+
+  li.nav-button{
+    float: right;
+    color: #4aaaa5;
+  }
+
+  li a.nav-button{
+    float: right;
+    color:#fff;
+  }
+
+  li.nav-header{
+    background-color: #4aaaa5;
+    color: #fff;
+  }
+
+
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+      background-color: #4aaaa5;
+      color:#fff;
+  }
+
 
