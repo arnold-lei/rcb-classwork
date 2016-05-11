@@ -1,3 +1,7 @@
+/*Test color: #506A85*/
+body{
+  color:#506A85;
+}
 .jumbotron{
   height:550px;
   padding:10% 0;
@@ -17,4 +21,17 @@ nav{
 .navbar-header{
   font-size: 1.5em;
   color:#73879C;
+}
+
+.section{
+  border-bottom: 1px solid #506A85;
+  text-align: center;
+  height:3em;
+  margin-bottom: 5em;
+}
+
+.section-header{
+  display:inline-block;
+  background-color: #fff;
+  padding:0 2em;
 }
