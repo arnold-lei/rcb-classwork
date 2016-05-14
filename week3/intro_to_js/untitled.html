@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Modifications</title>
+</head>
+<body>
+    <script>
+
+    // Create an Array of Drinks with all capital letters
+    // ...
+
+    var drinks = ["COKE", "PEPSI", "WATER", "ORANGE JUICE"];
+    var drinksLower = [];
+    // ...
+
+    console.log("First statement");
+    console.log(drinks[0]);
+
+    // Then modify each element of the array (individually) to make them lowercase
+    // ...
+    // drinksLower.push(drinks[0].toLowerCase());
+    // drinksLower.push(drinks[1].toLowerCase());
+    // drinksLower.push(drinks[2].toLowerCase());
+    // drinksLower.push(drinks[3].toLowerCase());
+    // console.log(drinksLower);
+    for(i = 0; i < drinks.length; i++){
+        drinks[i] = drinks[i].toLowerCase(); 
+    }
+
+
+    // CODE GOES HERE
+
+
+
+    // ...
+
+    console.log("Second statement");
+    console.log(drinks[0]);
+    console.log(drinks[1]);
+    console.log(drinks[2]);
+    console.log(drinks[3]);
+
+    </script>
+</body>
+</html>
