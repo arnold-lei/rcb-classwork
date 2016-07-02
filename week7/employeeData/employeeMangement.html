@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Data Mangement</title>
+    <link href="assets/reset.css" rel="stylesheet" type="text/css">
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity=
+    "sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    rel="stylesheet">
+    <link href="datepicker.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/af.js">
+
+
+
+<style type="text/css">
+body {
+	background-color: #c8c8c8;
+}
+
+	.panel-heading {
+		background-color: #355e3b;
+		color: white;
+	}
+
+	.panel {
+		border:	none;
+	}
+
+	.jumbotron {
+		background-color: #355e3b;
+		color: #355e3b;
+		background-image: url(bidness.png);
+		background-size: cover;
+		text-shadow: 1px 1px 1px white;
+	}
+</style>
+
+</head>
+<body>
+<div class="container">
+<br>
+<br>
+
+<div class="jumbotron text-center">
+		<h1>Employee Data Mangement</h1>
+		<h4>A Comprehensive Directory of Employee Billable Hours</h4>
+
+</div>
+
+
+
+
+	<div class="row">
+		<div class="col-sm-12">
+		<br>
+
+			
+			<div class="panel">
+
+				
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><i class="glyphicon glyphicon-piggy-bank"></i>   Current Employees:</strong></h3>
+				</div>
+
+				
+				<div class="panel-body" id="wellSection">
+					<table class="table table-striped ">
+					   <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Role</th>
+                    <th>Start Date</th>
+                    <th>Months Worked</th>
+                    <th>Monthly Rate ($)</th>
+                    <th>Total Billed ($)</th>
+                </tr>
+            </thead>
+
+											<tbody></tbody>
+
+
+           </table>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<div class="row">
+		<div class="col-sm-12">
+		<br>
+			
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong><i class="glyphicon glyphicon-floppy-open"></i>   Add Employees:</strong></h3>
+				</div>
+				<div class="panel-body">
+
+					
+					<form role="form">
+
+				  	  
+					  <div class="form-group">
+					    <label>Employee Name:</label>
+					    <input type="text" class="form-control " id="name">
+					  </div>
+
+					 
+						<div class="form-group">
+						<label>Role:</label>
+                    <input type="text" class="form-control" id="role">
+            </div>
+
+				  	  
+					  <div class="form-group">
+					    <label>Start Date:</label>
+
+
+                <div class='input-group date'>
+                    <input type="text" class="form-control datepicker" id="startDate">
+
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+					  </div>
+
+				  	  
+					  <div class="form-group">
+					    <label>Monthly Rate:</label>
+					    <input type="text" class="form-control" id="rate">
+					  </div>
+
+					 
+					  <button type="submit" class="btn btn-default" id="submit"><i class="glyphicon glyphicon-plus"></i> 
+					  	Submit</button>
+  					<button type="button" class="btn btn-default" id="clearAll"><i class="glyphicon glyphicon-erase"></i> 
+  					  	Clear</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js">
+    </script> 
+    <script src="script.js"></script>
+    <script src="datepicker.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#startDate').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            });
+        </script>
+</body>
+</html>

@@ -28,14 +28,21 @@
         'Ice Tea: $4'
         ];
 
-    // This line of Javascript "grabs" the div with the matching id (#drinkOptions);
-	var drinkDiv = $("#drinkOptions");
+  var drinkOptions = document.querySelector('#drinkOptions');
 
-	// For Loop then loops through our total drink list...
+  for(i=0; i < drinkList.length; ++i){
+    var newDiv = document.createElement('div');
+    newDiv.innerHTML=drinkList[i];
+    drinkOptions.appendChild(newDiv);
+  }
+ //    // This line of Javascript "grabs" the div with the matching id (#drinkOptions);
+	// var drinkDiv = $("#drinkOptions");
+
+	// // For Loop then loops through our total drink list...
 	for (var i = 0; i < drinkList.length; i++){
       newDiv = ('<div>' + drinkList[i] + '<div>');
       drinkDiv.append(newDiv);
-	}
+	// }
 
 
 </script>
