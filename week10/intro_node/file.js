@@ -1,7 +1,7 @@
 exports.user = {
-	firstName: 'Arnold',
-	lastName: 'Lei',
-	address: '430 Magnolia St, Highland Park NJ 08904',
-	phoneNumber: '(609) 647-2091',
+	firstName: 'Jon',
+	lastName: 'Smith',
+	address: '123 Drive, Springfield MA',
+	phoneNumber: '(111) 111-1234',
 	id:1
 }
