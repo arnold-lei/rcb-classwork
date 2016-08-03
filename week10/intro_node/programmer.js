@@ -24,7 +24,7 @@ var Programmer = function(id){
 	}
 }
 
-inquirer.prompt({
+inquirer.prompt([{
 	{
 		name: 'name',
 		message: ' What is your name?',
@@ -41,4 +41,9 @@ inquirer.prompt({
 		name: 'language',
 		message: 'What is your favourite langauge'
 	}
-})
+}])then.function(answer){
+	var newProgrammer = new Programmer({answer.name, answer.position, answer.age, answer.language})
+}
+
+
+

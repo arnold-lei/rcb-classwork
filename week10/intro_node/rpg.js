@@ -77,7 +77,7 @@ var createTeam = function(){
 	}
 }
 
-createTeam()
+createTeam();
 // Once all of the players have been created, print their stats.
 
 // Once your code is functioning properly, move on to create a function called "playGame" which will be run once all of your players have been created and will do the following...

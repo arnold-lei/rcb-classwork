@@ -81,12 +81,69 @@ var Tamagotchi = function(){
 	// The fourth method is "increaseAge()" - This method runs within the sleepy() method when the DigitalPal goes to sleep and increases the DigitalPal's age by one while also printing "Happy Birthday to me! I am "+age+" old!"
 	this.increaseAge = function(){
 		this.age++;
-		console.log('Happy Birthday to me! I am '+this.age+' old!')
+		console.log('Happy Birthday to me! I am ' +this.age+' old!');
+	};
+}
+
+// Outside - Initially set to false
+
+// Bark() - Prints out "Woof! Woof!" when run
+
+// goOutside() - If outside is false, prints "Yay! I love the outdoors!", sets outside to true, and runs Bark(). If outside is true, prints "We're already outside though..."
+
+// goInside() - If outside is true, prints "Do we have to? Fine..." and sets outside to false. If outside is false, prints "I'm already inside..."
+
+var dog = new Tamagotchi();
+dog.outside = false;
+dog.bark = function(){
+	console.log('Woff! Woff!');
+};
+dog.goOutside = function(){
+	if(!this.outside){
+		console.log('Yay! I love the outdoors!');
+		this.outside = true;
+		this.bark();
+	}else{
+		console.log('We are already outside though....')
+	}
+};
+dog.goInside = function(){
+	if(outside){
+		console.log('Do we have to? Fine...');
+		this.outside = false; 
+	}else{
+		console.log('I\'m already inside....')
 	}
 }
 
+// Make a second variable named "Cat" that is set to a new DigitalPal and add the following methods to it:
 
+// HouseCondition - Initially set to 100... But not for long...
 
+// meow() - prints out "Meow! Meow!" when run
 
+// destroyFurniture() - Lowers HouseCondition by 10 and prints "MUAHAHAHAHA! TAKE THAT FURNITURE!" to the screen. Also sets bored to false and sleepy to true. If HouseCondition is equal to 0, then this should not run anymore.
+
+// buyNewFurnitue() - Raises HouseCondition by 50 and prints "Are you sure about that?" to the screen.
+var cat = Tamagotchi();
+
+cat.houseCondition = 100
+
+cat.meow = function(){
+	console.log('Meow! Meow!');
+}
+
+cat.destroyFurniture = function(){
+	if(this.houseCondition > 0){
+		this.houseCondition = this.houseCondition - 10;
+		console.log('MUAHAHAHAHAHAH!!!!! TAKE THAT FUNRITURE!');
+		cat.bored = false;
+		cat.sleepy = true;
+	}
+}
+cat.buyNewFurnitue = function(){
+	this.houseCondition += 50;
+	console.log('Are you sure abot that?');
+}
 
 

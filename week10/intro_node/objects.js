@@ -44,7 +44,7 @@ var cat = {
 dog.makeNoise();
 cat.makenoise();
 var massHysteria = function(cat, dog){
-	if(dog.raining == true && cat.raining == true)
+	if(dog.raining == true && cat.raining == trueb	)
 	console.log('DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!')
 }
 

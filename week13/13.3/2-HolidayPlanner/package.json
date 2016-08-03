@@ -1,0 +1,15 @@
+{
+  "name": "holiday_planner",
+  "version": "1.0.0",
+  "description": "Many different kinds of holidays are celebrated around the world and we want to help create parties for our clients whilst also keeping track of all the events we host. In MySQL create a database called 'holiday_party_db' with two tables structured like the tables below.",
+  "main": "connection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.10.2"
+  }
+}
