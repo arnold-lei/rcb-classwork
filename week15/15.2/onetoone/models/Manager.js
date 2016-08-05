@@ -40,7 +40,8 @@ module.exports = function(sequelize, DataTypes){
 			// associate gets called within index.js,
 			// and mergers this model with models.Store
       associate: function(models) {
-      	Manager.hasOne(models.Store)
+      	Manager.hasOne(models.Store);
+      	Manager.hasMany(models.Employee)
       }
     }
   })

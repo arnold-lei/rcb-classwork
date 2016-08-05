@@ -13,11 +13,13 @@ module.exports = function(sequelize, DataTypes){
 		},
 		startDate: {
 			type: DataTypes.DATE,
+		},
+		address: {
+			type: DataTypes.STING,
 		}
 	}, {
 		classMethods: {
-      		associate: function(models) {
-      			Manager.hasOne(models.Store)
+
       }
     }
   })
