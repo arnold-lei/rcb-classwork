@@ -60,7 +60,6 @@ app.delete('/delete', function(req,res){
 });
 
 app.put('/update', function(req,res){
-
     connection.query('UPDATE plans SET plan = ? WHERE id = ?', [req.body.plan, req.body.id], function(err, result) {
       if (err) throw err;
       res.redirect('/');
