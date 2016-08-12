@@ -1,0 +1,16 @@
+{
+  "name": "nightmare_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightmare.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+      "nightmare": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
