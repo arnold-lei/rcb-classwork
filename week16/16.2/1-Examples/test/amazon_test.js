@@ -10,9 +10,9 @@ describe('Amazon', function(){
         var nightmare = new Nightmare({
             show: true
         });
-        nightmare.goto('https://www.amazon.com/')
+        nightmare
+            .goto('https://www.amazon.com/')
             .click('a[href*="/gp/goldbox/ref=nav_cs_gb"]')
-            .run()
     })
 
 })
